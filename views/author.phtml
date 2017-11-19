@@ -1,0 +1,8 @@
+<h1>Authors</h1>
+
+<?php foreach ($authors as $author) : ?>
+    <div>
+        <?=$author['first_name']?> - <?=$author['last_name']?>
+        <a href="/?page=author&amp;action=show&amp;id=<?=$author['id']?>">Show</a>
+    </div>
+<?php endforeach ?>
